@@ -59,9 +59,7 @@ function getComicGif() {
 }
 
 // function that changes gif state from active to still or vice versa
-$(document).on("click", ".gif", function(event) {
-	// // prevent page from submit form
-	// event.preventDefault();
+$(document).on("click", ".gif", function() {
 
 	// getting state and source of gif 
 	var state = $(this).attr("data-state");
@@ -83,7 +81,7 @@ $(document).on("click", ".gif", function(event) {
 		$(this).attr("src", acti);
 		$(this).attr("data-state", "active");
 	}
-})
+});
 
 // function to display comic gifs
 function createButtons() {
