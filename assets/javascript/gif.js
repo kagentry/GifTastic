@@ -12,7 +12,7 @@ function getComicGif() {
 	var comic = $(this).attr("data-name");
 
 	// constructing queryURL using comic book character name
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + comic + "&api_key=dc6zaTOxFJmzC&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + comic + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 	// performing an AJAX request with queryURL
 	$.ajax({
